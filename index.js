@@ -75,3 +75,9 @@
 //     ? `${item} is available to order!`
 //     : "Sorry! We are out of stock!";
 // }
+
+// const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
+
+// for (let i = 0, i < fruits.length; i++){
+//     console.log(${i+1} - ${fruits[i]});
+// }
