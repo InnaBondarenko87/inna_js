@@ -298,3 +298,32 @@
 
 // console.log(caclculateAverage(1, 2, 3));
 // console.log(caclculateAverage(1, 20, 30, 54));
+
+// ******************
+// function countProps(object) {
+//   const keys = Object.entries(object);
+//   return keys;
+// }
+
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// console.log(countProps({}));
+
+// Виклик `countProps({ name: "Mango", age: 2 })` повертає `2`
+// Функція `countProps` приймає наступні параметри: `object`
+// Виклик `countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })` повертає `3
+
+// **********  ???????????
+// function checkStorage(storage, item) {
+//   storage = [];
+
+//   const storageArr = storage.includes(item);
+//   if (storageArr === item) {
+//     console.log(`${item} is available to order!"`);
+//   } else {
+//     console.log("Sorry! We are out of stock!");
+//   }
+// }
+
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
