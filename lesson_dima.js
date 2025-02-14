@@ -317,11 +317,11 @@
  * Повинно вийти 390. Якщо об'єкт salaries порожній, то результат має бути 0.
  */
 
-const salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
-};
+// const salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
 
 // const values = Object.values(salaries);
 
@@ -356,3 +356,140 @@ const salaries = {
 //   total += salaries[key];
 // }
 // console.log(total);
+
+// ************   lesson   8
+
+const friends = [
+  { name: "Ross", online: false },
+  { name: "Joey", online: true },
+  { name: "Chandler", online: false },
+  { name: "PHOEBE", online: true },
+  { name: "Monika", online: true },
+  { name: "Rachel", online: false },
+];
+
+// масив обєктів
+
+// function findByname(allFriends, findName) {
+//   for (const friend of allFriends) {
+//     if (friend.name === findName) {
+//       return friend.name;
+//     }
+//   }
+//   return "Not found";
+// }
+// console.log(findByname(friends, "Monika"));
+
+// імена всіх друзів
+
+function getNames(allFriends) {
+  const name = [];
+
+  for (const item of allFriends) {
+    console.log(item);
+  }
+}
+
+console.log(getNames(friends));
+// ********************************************
+
+// * Типів транзакцій всього два.
+//  * Можна покласти чи зняти гроші з рахунку.
+//  */
+// const Transaction = {
+//   DEPOSIT: "deposit",
+//   WITHDRAW: "withdraw",
+// };
+
+//   /*
+//    * Кожна транзакція це об'єкт із властивостями: id, type та amount
+//    */
+
+//   const account = {
+//     // Поточний баланс рахунку
+//     balance: 0,
+
+//     // Історія транзакцій
+//     transactions: [],
+
+//     /*
+//      * Метод створює та повертає об'єкт транзакції.
+//      * Приймає суму та тип транзакції.
+//      */
+//     createTransaction(amount, type) {
+//       const obj = { id: amount, amount, type };
+//       return obj;
+//     },
+
+//     /*
+//      * Метод, що відповідає за додавання суми до балансу.
+//      * Приймає суму транзакції.
+//      * Викликає createTransaction для створення об'єкта транзакції
+//      * після чого додає його до історії транзакцій
+//      */
+//     deposit(amount) {
+//       this.balance += amount;
+//       const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
+//       this.transactions.push(transaction);
+//     },
+
+//     /*
+//      * Метод, що відповідає за зняття суми з балансу.
+//      * Приймає суму транзакції.
+//      * Викликає createTransaction для створення об'єкта транзакції
+//      * після чого додає його до історії транзакцій.
+//      *
+//      * Якщо amount більше ніж поточний баланс, виводь повідомлення
+//      * про те, що зняття такої суми не можливе, недостатньо коштів.
+//      */
+//     withdraw(amount) {
+//       if(this.balance < amount) {
+//         console.log("недостатньо коштів");
+//         return;
+//       }
+
+//       this.balance -= amount;
+//       const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
+//       this.transactions.push(transaction);
+//     },
+
+//     /*
+//      * Метод повертає поточний баланс
+//      */
+//     getBalance() {
+//       return this.balance;
+//     },
+
+//     /*
+//      * Метод шукає та повертає об'єкт транзакції по id
+//      */
+//     getTransactionDetails(id) {
+//       for(const item of this.transactions) {
+//         if(item.id === id) {
+//           return item;
+//         }
+//       }
+//       return "Not found";
+//     },
+
+//     /*
+//      * Метод повертає кількість коштів
+//      * певного типу транзакції з усієї історії транзакцій
+//      */
+//     getTransactionTotal(type) {
+//       let res = 0;
+
+//       for(const item of this.transactions) {
+//         if(item.type === type) {
+//           res += item.amount;
+//         }
+//       }
+
+//       return res;
+//     },
+// };
+
+// account.deposit(300);
+// account.withdraw(100);
+
+// console.log(account);
