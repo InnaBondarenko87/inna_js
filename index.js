@@ -432,3 +432,761 @@
 // console.log(profile.getInfo()); // "Marco has 320 active hours!"
 
 // ********************************************************************
+
+// ******AVTO******
+
+// const changeEven = (numbers, value) => {
+//   const newArray = [];
+
+//   for (const number of numbers) {
+//     if (number % 2 === 0) {
+//       const a = number + value;
+//       newArray.push(a);
+//     } else {
+//       newArray.push(number);
+//     }
+//   }
+
+//   return newArray;
+// };
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10)); //[1, 12, 3, 14, 5]);
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(function (item) {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([4, 6, 0]));
+
+// *********************************************
+// function filterArray(numbers, value) {
+//   let arr = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       arr.push(number);
+//     }
+//   });
+//   return arr;
+// }
+// console.log(filterArray([1, 5, 7], 3));
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// console.log(planetsLengths);
+
+// **************
+// const values = [1, 2, 3];
+
+// values.forEach((value) => console.log(value));
+
+// ********** awto
+// users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//   },
+// ];
+
+// const isEveryUserActive = users.every((user) => user.isActive);
+
+// console.log(isEveryUserActive);
+// *************************************************************************
+
+// d.z. 5
+
+// **********  1   *******************
+
+// const getUserNames = (users) => users.map((user) => user.name);
+
+// console.log(
+//   getUserNames([
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       balance: 2811,
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       balance: 3821,
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       balance: 3793,
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       balance: 2278,
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       balance: 3951,
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       balance: 1498,
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       balance: 2764,
+//     },
+//   ])
+// );
+
+// // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+
+// **********************************   2    **************************************************
+
+// const getUsersWithFriend = (users, friendName) => {
+//   return users.filter((user) => {
+//     if (user.friends.includes(friendName)) {
+//       return {
+//         name: user.name,
+//         friends: user.friends,
+//       };
+//     }
+//   });
+// };
+
+// const allUsers = [
+//   {
+//     name: "Moore Hensley",
+//     friends: ["Sharron Pace"],
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//   },
+//   {
+//     name: "Elma Head",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//   },
+//   {
+//     name: "Carey Barr",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//   },
+// ];
+
+// console.log(getUsersWithFriend(allUsers, "Briana Decker"));
+// // [
+// //   {
+// //     name: "Sharlene Bush",
+// //     friends: ["Briana Decker", "Sharron Pace"]
+// //   },
+// //   {
+// //     name: "Sheree Anthony",
+// //     friends: ["Goldie Gentry", "Briana Decker"]
+// //   }
+// // ]
+
+// console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+// // [
+// //   {
+// //     name: "Elma Head",
+// //     friends: ["Goldie Gentry", "Aisha Tran"]
+// //   },
+// //   {
+// //     name: "Sheree Anthony",
+// //     friends: ["Goldie Gentry", "Briana Decker"]
+// //   }
+// // ]
+
+// console.log(getUsersWithFriend(allUsers, "Adrian Cross")); // []
+
+// ****** 3 *********
+
+// const sortByDescendingFriendCount = (users) =>
+//   users.toSorted((a, b) => b.friends.length - a.friends.length);
+
+// console.log(
+//   sortByDescendingFriendCount([
+//     {
+//       name: "Moore Hensley",
+//       friends: ["Sharron Pace"],
+//       gender: "male",
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       gender: "female",
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       gender: "male",
+//     },
+//     {
+//       name: "Elma Head",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       gender: "female",
+//     },
+//     {
+//       name: "Carey Barr",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       gender: "male",
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       gender: "male",
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       gender: "female",
+//     },
+//   ])
+// );
+// // [
+// //   {
+// //     name: "Ross Vazquez",
+// //     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+// //     gender: "male",
+// //   },
+// //   {
+// //     name: "Sharlene Bush",
+// //     friends: ["Briana Decker", "Sharron Pace"],
+// //     gender: "female",
+// //   },
+// //   {
+// //     name: "Elma Head",
+// //     friends: ["Goldie Gentry", "Aisha Tran"],
+// //     gender: "female",
+// //   },
+// //   {
+// //     name: "Carey Barr",
+// //     friends: ["Jordan Sampson", "Eddie Strong"],
+// //     gender: "male",
+// //   },
+// //   {
+// //     name: "Blackburn Dotson",
+// //     friends: ["Jacklyn Lucas", "Linda Chapman"],
+// //     gender: "male",
+// //   },
+// //   {
+// //     name: "Sheree Anthony",
+// //     friends: ["Goldie Gentry", "Briana Decker"],
+// //     gender: "female",
+// //   },
+// //   {
+// //     name: "Moore Hensley",
+// //     friends: ["Sharron Pace"],
+// //     gender: "male",
+// //   },
+// // ];
+
+// *********** 4 ********
+
+// const clients = [
+//   {
+//     name: "Moore Hensley",
+//     gender: "male",
+//     balance: 2811,
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     gender: "female",
+//     balance: 3821,
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     gender: "male",
+//     balance: 3793,
+//   },
+//   {
+//     name: "Elma Head",
+//     gender: "female",
+//     balance: 2278,
+//   },
+//   {
+//     name: "Carey Barr",
+//     gender: "male",
+//     balance: 3951,
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     gender: "male",
+//     balance: 1498,
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     gender: "female",
+//     balance: 2764,
+//   },
+// ];
+
+// const getTotalBalanceByGender = ((users, gender) =>
+//     clients.reduce((acc, client) => acc + client.balance, 0)
+// console.log(acc)
+// );
+
+// // console.log(getTotalBalanceByGender(clients, "male")); // 12053
+
+// // console.log(getTotalBalanceByGender(clients, "female")); // 8863
+
+// **********  lesson  gjh *********
+
+// const product1 = {
+//   price: 123,
+//   promptName: "Aplle",
+//   showInfo() {
+//     console.log(this.promptName);
+//   },
+// };
+
+// const obj2 = {
+//   price: 123,
+//   promptName: "ARI",
+//   showInfo() {
+//     console.log(this.promptName);
+//   },
+// };
+
+// product1.showInfo();
+// obj2.showInfo();
+
+// ******
+
+// function drive() {
+//   console.log(this.name);
+// }
+
+// const obj1 = {
+//   name: "Inna",
+//   age: 37,
+//   drive: drive,
+// };
+
+// const obj2 = {
+//   name: "Ari",
+//   age: 10,
+//   drive: drive,
+// };
+
+// obj1.drive();
+// obj2.drive();
+// *********************
+
+// function foo(callback) {
+//   const obj = {
+//     name: "Inna",
+//     test: callback,
+//   };
+
+//   obj.test();
+// }
+
+// function myCallback() {
+//   console.log(this);
+// }
+
+// foo(myCallback);
+
+// ____________
+
+// const user1 = {
+//   name: "Vikror",
+//   drive() {
+//     console.log(this.name);
+//   },
+// };
+
+// const user2 = {
+//   name: "Lena",
+// };
+
+// const user3 = {
+//   name: "Ari",
+// };
+
+// user1.drive.call(user2);
+// user1.drive.call(user3);
+
+// *********************************÷
+
+// function foo() {
+//   console.log(this);
+// }
+// const cat1 = {
+//   name: "katia",
+//   showThis: foo,
+// };
+
+// const cat2 = {
+//   name: "tatia",
+//   showThis: foo,
+// };
+
+// const cat3 = {
+//   name: "satia",
+//   showThis: foo,
+// };
+
+// cat2.showThis();
+// foo();
+// ***********************÷
+
+// const obj1 = {
+//   name: "Inna",
+//   age: 37,
+//   foo() {
+//     console.log(this.name);
+//   },
+// };
+
+// const obj2 = {
+//   name: "Ari",
+//   age: 10,
+//   foo: obj1.foo,
+// };
+
+// obj1.foo();
+
+// obj2.foo();
+
+// function car() {
+//   console.log(this.name);
+// }
+
+// const obj1 = {
+//   name: "Inna",
+//   age: 37,
+//   car: car,
+// };
+
+// const obj2 = {
+//   name: "ARI",
+//   age: 10,
+//   car: car,
+// };
+
+// obj1.car();
+// obj2.car();
+// ********************
+// const chopShop = {
+//   cars: [
+//     { make: "Honda", model: "CR-V", amount: 14, price: 24045 },
+//     { make: "Honda", model: "Accord", amount: 2, price: 22455 },
+//     { make: "Mazda", model: "Mazda 6", amount: 8, price: 24195 },
+//     { make: "Mazda", model: "CX-9", amount: 7, price: 31520 },
+//     { make: "Toyota", model: "4Runner", amount: 19, price: 34210 },
+//     { make: "Toyota", model: "Sequoia", amount: 16, price: 45560 },
+//     { make: "Toyota", model: "Tacoma", amount: 4, price: 24320 },
+//     { make: "Ford", model: "F-150", amount: 11, price: 200 },
+//     { make: "Ford", model: "Fusion", amount: 13, price: 22120 },
+//     { make: "Ford", model: "Explorer", amount: 6, price: 31660 },
+//   ],
+
+//   calcTotalPrice(CarMake) {
+//     const totalCars = this.cars.find((item) => item.make === CarMake);
+//     return totalCars.price * totalCars.amount;
+//   },
+// };
+
+// console.log(chopShop.calcTotalPrice("Ford"));
+// ************************************
+
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+// console.log(child);
+// console.log();
+// *****************************************
+
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// console.log(child.Prototype);
+// console.log(ancestor.hasOwnProperty("age"));
+// console.log(child.hasOwnProperty("age"));
+
+// const objC = { c: "objC prop" };
+
+// const objB = Object.create(objC);
+// objB.b = "objB prop";
+
+// const objA = Object.create(objB);
+// objA.a = "objA prop";
+
+// console.log(objB); // { a: "objA prop", [[Prototype]]: objB }
+
+// const objA = {
+//   x: 10,
+//   y: 200,
+// };
+
+// const objB = {
+//   t1: 3,
+//   t2: 8,
+//   _proto_: objA,
+// };
+
+// console.log(objB);
+
+// console.log(window);
+
+// const arr = [10, 20, 30];
+
+// console.log(arr);
+
+// //************* (*********** dz 6//
+//  *********** 1 ******************÷
+
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+// **************
+// ******************  2  *********************
+
+// class User {
+//   name = "Inna";
+//   age = 20;
+// }
+
+// const user1 = new User();
+// console.log(user1);
+
+// ================
+
+// const objC = {
+//   c: "objC",
+// };
+
+// const objB = Object.create(objC);
+// objB.b = "objB";
+
+// const objA = Object.create(objB);
+// objA.a = "objA";
+
+// console.log(objA);
+// console.log(objB);
+// console.log(objC);
+
+// ========================
+
+// / Наше завдання написати програмне забезпечення для автомобіля, а саме натискання кнопки
+// набору та зниження швидкості в системі круїз контролю.
+// Створити об'єкт cruiseControl з методами accelerate та decrease,
+// властивостями speed та brand.
+
+// const cruiseControl = {
+//   speed: 0,
+//   brand: "audi",
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(`auto ${this.brand} ПРИСКОРЮЄТЬСЯ!!! швидкість ${this.speed}`);
+//   },
+//   decrease() {
+//     if (this.speed <= 0) {
+//       console.log(`auto ${this.brand} стоїть`);
+//       return;
+//     }
+
+//     this.speed -= 10;
+//     console.log(`auto ${this.brand} ГАЛЬМУЄ!!! швидкість ${this.speed}`);
+//   },
+// };
+
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// console.log(cruiseControl);
+
+// const cruiseControl = {
+//   speed: 0,
+//   brand: "Audi",
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(
+//       `auto ${this.brand} прискорюється, їде зі швидкістю ${this.speed}`
+//     );
+//   },
+//   decrease() {
+//     if (this.speed <= 0) {
+//       console.log("Авто зупинилось");
+
+//       return;
+//     }
+//     this.speed -= 10;
+//     console.log(
+//       `auto ${this.brand} НЕ прискорюється, їде зі швидкістю ${this.speed}`
+//     );
+//   },
+// };
+
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// console.log(cruiseControl);
+
+// const cruiseControl = {
+//   speed: 0,
+//   brand: "BMW",
+//   accelerate() {
+//     (this.speed += 10),
+//       console.log(
+//         `Avto ${this.brand} roshnie shybkosc. shybkosc ${this.speed}`
+//       );
+//     return;
+//   },
+//   decrease() {
+//     if (this.speed <= 0) {
+//       console.log(`Auto stoi`);
+//     }
+//     this.speed -= 10;
+//     console.log(`Avto ${this.brand} gujk ${this.speed}`);
+//   },
+// };
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+// cruiseControl.accelerate();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+// cruiseControl.decrease();
+
+// console.log(cruiseControl);
+// =======================
+// DOM
+// ===========================
